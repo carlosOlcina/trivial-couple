@@ -28,6 +28,10 @@ main {
   line-height: 3rem;
 }
 
-.card p {
-  width: fit-content(stretch);
+.countdown {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+
+  font-size: 1.5rem;
 }
