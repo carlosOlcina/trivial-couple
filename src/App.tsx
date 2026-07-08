@@ -9,8 +9,6 @@ function App() {
     (state) => state.deleteFirstQuestion,
   );
 
-  console.log(questions);
-
   return (
     <>
       <main onClick={deleteFirstQuestion}>
