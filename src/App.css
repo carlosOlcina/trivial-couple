@@ -1,0 +1,33 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 80vh;
+  padding: 2rem;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 2rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.card p {
+  width: fit-content(stretch);
+}
