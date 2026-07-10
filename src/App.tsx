@@ -11,9 +11,9 @@ function App() {
     (state) => state.deleteFirstQuestion,
   );
 
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(DURATION);
   const handleClick = () => {
-    setTimeLeft(60)
+    setTimeLeft(DURATION)
     deleteFirstQuestion()
   }
 
