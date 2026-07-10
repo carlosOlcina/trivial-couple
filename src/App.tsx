@@ -12,6 +12,10 @@ function App() {
   );
 
   const [timeLeft, setTimeLeft] = useState(60);
+  const handleClick = () => {
+    setTimeLeft(60)
+    deleteFirstQuestion()
+  }
 
   useEffect(() => {
     if (timeLeft === 0) {
@@ -30,7 +34,7 @@ function App() {
 
   return (
     <>
-      <main onClick={deleteFirstQuestion}>
+      <main onClick={handleClick}>
         <time className="countdown" dateTime="PT1M">
           {String(minutes).padStart(2, "0")}:{String(seconds).padStart(2, "0")}
         </time>
